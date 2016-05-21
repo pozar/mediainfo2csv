@@ -10,6 +10,6 @@ crawldir="/Camera"
 grep -v ^# $templatefile | grep \; | xargs echo -n | sed 's/% %/	/g' | sed 's/% /	/g' | sed 's/%//g'
 
 # Start to crawl the directory, look for MP4 files and feed it to mediainfo...
-find $crawldir -type f | grep -i \.mp4 | while read mediafile;do
+find $crawldir -type f | grep -i \\.mp4 | while read mediafile;do
 mediainfo --inform="file://$templatefile" $mediafile
 done
