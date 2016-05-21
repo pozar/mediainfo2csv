@@ -1,6 +1,6 @@
 #mediainfo2csv
 
-Example of creating a CSV from MP4 containers with the assumption there is only one video and audio file in it.
+Example of creating a CSV from MP4 containers with [`mediainfo`](https://mediaarea.net/en/MediaInfo), The assumption that there is only one video and audio file in it.
 Running <code>mediainfo2csv > foo.csv</code> should get you something like...
 ```
 General;CompleteName	Format	Format_Profile	CodecID	FileSize	Duration	OverallBitRate_Mode	OverallBitRate	Encoded_Date	Tagged_Date	Video;ID	Format	Format/Info	Format_Profile	Format_Settings_CABAC	Format_Settings_RefFrames	Format_Settings_GOP	CodecID	CodecID/Info	Duration	BitRate	BitRate_Maximum	Width	Height	DisplayAspectRatio/String	FrameRate_Mode	FrameRate	ColorSpace	ChromaSubsampling	BitDepth	ScanType	Bits-(Pixel*Frame)	StreamSize	Encoded_Library/String	Encoded_Library_Settings	Encoded_Date	Tagged_Date	Audio;ID	Format	Format/Info	Format_Profile	CodecID	Duration	BitRate_Mode	BitRate	BitRate_Maximum	Channel(s)	ChannelPositions	SamplingRate	Compression_Mode	StreamSize	Encoded_Date	Tagged_Date
