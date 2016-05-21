@@ -1,4 +1,4 @@
-
+#mediainfo2csv
 
 Example of creating a CSV from MP4 containers with the assumption there is only one video and audio file in it.
 Running <code>mediainfo2csv > foo.csv</code> should get you something like...
