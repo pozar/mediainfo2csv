@@ -1,7 +1,7 @@
-mediainfo2csv
+
 
 Example of creating a CSV from MP4 containers with the assumption there is only one video and audio file in it.
-Running mediainfo2csv > foo.csv should get you something like...
+Running <code>mediainfo2csv > foo.csv</code> should get you something like...
 ```
 General;CompleteName	Format	Format_Profile	CodecID	FileSize	Duration	OverallBitRate_Mode	OverallBitRate	Encoded_Date	Tagged_Date	Video;ID	Format	Format/Info	Format_Profile	Format_Settings_CABAC	Format_Settings_RefFrames	Format_Settings_GOP	CodecID	CodecID/Info	Duration	BitRate	BitRate_Maximum	Width	Height	DisplayAspectRatio/String	FrameRate_Mode	FrameRate	ColorSpace	ChromaSubsampling	BitDepth	ScanType	Bits-(Pixel*Frame)	StreamSize	Encoded_Library/String	Encoded_Library_Settings	Encoded_Date	Tagged_Date	Audio;ID	Format	Format/Info	Format_Profile	CodecID	Duration	BitRate_Mode	BitRate	BitRate_Maximum	Channel(s)	ChannelPositions	SamplingRate	Compression_Mode	StreamSize	Encoded_Date	Tagged_Date
 /Camera/20151029_053230.mp4	MPEG-4	Base Media / Version 2	mp42	12807843	5943		17240912	UTC 2015-10-29 09:32:41	UTC 2015-10-29 09:32:41	1	AVC	Advanced Video Codec	High@L4	Yes	1	M=1, N=30	avc1	Advanced Video Coding	5943	16969333		1920	1080	16:9	VFR	29.933	YUV	4:2:0	8	Progressive	0.273	12613759			UTC 2015-10-29 09:32:41	UTC 2015-10-29 09:32:41	2	AAC	Advanced Audio Codec	LC	40	5931	CBR	256000		2	Front: L R	48000	Lossy	189784	UTC 2015-10-29 09:32:41	UTC 2015-10-29 09:32:41
