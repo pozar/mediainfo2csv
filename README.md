@@ -1,6 +1,6 @@
 #mediainfo2csv
 
-Example of creating a CSV from MP4 containers with [`mediainfo`](https://mediaarea.net/en/MediaInfo).  I had a need to create a database of streams in a bunch-o-files.  In reality, containers such as MP4, can have zero to multiple vidoe, audio and data streams. This script assumes that there is only one video and audio file in it.  Anything outside of that will not be captured by it.  Ideally, one would just scrape the XML that mediainfo spits out and use that.  This is the quick and dirty method.
+Example of creating a CSV from media containers with [`mediainfo`](https://mediaarea.net/en/MediaInfo).  I had a need to create a database of streams in a bunch-o-files.  In reality, containers such as MP4, can have zero to multiple video, audio and data streams. This script assumes that there is only one video and audio file in it.  Anything outside of that will not be captured by it.  Ideally, one would just scrape the XML that mediainfo spits out and use that.  This is the quick and dirty method.
 
 Running <code>mediainfo2csv > foo.csv</code> should get you something like...
 ```
