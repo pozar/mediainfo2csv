@@ -1,15 +1,16 @@
 #!/bin/bash
 # mediainfo2csv
-# Example of creating a CSV from MP4 containers with the assumption 
+# Example of creating a CSV from media containers with the assumption 
 # there is only one video and audio file in it.
 
-templatefile="./mediainfo_template"
-crawldir="/Camera"
+templatefile="/tmp/mediainfo_video_template"
+crawldir="."
 
 # Create a header field for the CSV from the template using Tabs as separators...
 grep -v ^# $templatefile | grep \; | xargs echo -n | sed 's/% %/	/g' | sed 's/% /	/g' | sed 's/%//g'
+echo 
 
-# Start to crawl the directory, look for MP4 files and feed it to mediainfo...
-find $crawldir -type f | grep -i \\.mp4 | while read mediafile;do
-mediainfo --inform="file://$templatefile" $mediafile
+# Start to crawl the directory, look for files bigging than 4K and feed it to mediainfo...
+find $crawldir -type f -size +4096 | while read mediafile;do
+  /usr/bin/mediainfo --Inform="file://$templatefile" "$mediafile"
 done
