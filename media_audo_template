@@ -1,0 +1,2 @@
+General;%CompleteName%	%Title%	%Album%	%Composer%	%Released_Date%	%Track/Position%	%Track/Position_Total%	%Part/Position%	%Part/Position_Total%	%Format%	%Format_Profile%	%CodecID%	%FileSize%	%Duration%	%OverallBitRate_Mode%	%OverallBitRate%	%Encoded_Date%	%Tagged_Date%	
+Audio;%ID%	%Format%	%Format/Info%	%Format_Profile%	%CodecID%	%Duration%	%BitRate_Mode%	%BitRate%	%BitRate_Maximum%	%Channel(s)%%ChannelPositions%	%SamplingRate%	%Compression_Mode%	%StreamSize%	%Encoded_Date%	%Tagged_Date%
